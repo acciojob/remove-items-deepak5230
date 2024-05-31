@@ -1,15 +1,16 @@
     
         function removeSelectedColor() {
-            const colorSelect = document.getElementById("colorSelect");
-            if (colorSelect) {  // Ensure an option is selected
-                colorSelect.remove();
+            const colorSelect = document.getElementById('colorSelect');
+            const selectedIndex = colorSelect.selectedIndex;
+
+            if (selectedIndex !== -1) {
+                colorSelect.options[selectedIndex].remove();
             }
         }
 
         function removeDropdown() {
-            var colorSelect = document.getElementById("colorSelect");
-            if (colorSelect) {
-                colorSelect.remove();  // Removes the entire dropdown list
-            }
+            const colorSelect = document.getElementById('colorSelect');
+            colorSelect.remove();
+ 
         }
     
