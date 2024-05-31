@@ -1,8 +1,8 @@
     
         function removeSelectedColor() {
-            var colorSelect = document.getElementById("colorSelect");
-            if (colorSelect.selectedIndex >= 0) {  // Ensure an option is selected
-                colorSelect.remove(colorSelect.selectedIndex);
+            const colorSelect = document.getElementById("colorSelect");
+            if (colorSelect) {  // Ensure an option is selected
+                colorSelect.remove();
             }
         }
 
